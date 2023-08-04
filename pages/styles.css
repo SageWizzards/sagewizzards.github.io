@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+.sage-header{
+    font-family: Poppins;
+    height: 50px;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    position: fixed;
+}
