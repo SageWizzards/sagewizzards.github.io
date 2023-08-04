@@ -8,11 +8,60 @@ body{
 }
 
 .sage-header{
-    font-family: Poppins;
-    height: 50px;
+    height: 3rem;
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
     position: fixed;
+}
+
+.sage-nav {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.sage-nav-menu{
+    display: flex;
+    margin-right: 2.5rem;
+}
+
+.nav-menu-item {
+    text-decoration: none;
+    margin-right: 40px;
+    list-style: none;
+    font-size: 12px;
+    margin: 0 15px;
+    gap: 20px;
+    line-height: 80px;
+    width: max max-content;
+}
+
+.sage-nav-link{
+    font-family: Poppins;
+    color: #651DFF;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.sage-logo{
+    line-height: 80px;
+    width: 125px;
+    height: 63px;
+}
+
+.sage-nav-button {
+    cursor: pointer;
+    width: 127px;
+    height: 40px;
+    padding: 10px 24px;
+    border-radius: 100px;
+    justify-content: end;
+    align-items: center;
+    background: #6750A4;
+    color: #FFFFFF;
+    border-color: transparent;
+    font-family: Poppins;
+    font-size: 12px;
 }
