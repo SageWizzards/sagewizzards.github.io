@@ -14,12 +14,14 @@ body{
     padding-bottom: 1rem;
     padding-left: 3rem;
     position: fixed;
+    background-color: #F7F7F9;
 }
 
 .sage-nav {
     display: flex;
     text-decoration: none;
     justify-content: space-between;
+    background-color: #F7F7F9;
 }
 
 .sage-nav-menu{
@@ -35,7 +37,7 @@ body{
     margin: 0 15px;
     gap: 20px;
     line-height: 80px;
-    width: max max-content;
+    width: max-content;
 }
 
 .sage-nav-link{
