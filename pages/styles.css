@@ -67,3 +67,8 @@ body{
     font-family: Poppins;
     font-size: 12px;
 }
+
+.sage-toggle{
+    font-size: 2rem;
+    padding: 0 20px;
+}
