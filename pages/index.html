@@ -1,33 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sage NavBar</title>
+    <title>Sage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--Fonts-->
+
     <!--Poppins Font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS Styles -->
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="stylesheet" href="../css/styles.css">
+
   </head>
   <body>
+
     <header class="sage-header">
+
       <!--Navbar Sage-->
       <nav class="sage-nav">
-        <img src="../images/icons/sage_logo.png" class="sage-logo">
+        <img src="../assets/images/icons/sage_logo.png" class="sage-logo">
+
+        <!--
         <button class="sage-toggle">
           <i class="fas fa-bars"></i>
-        </button>
+        </button>-->
+
         <ul class="sage-nav-menu">
           <li class="nav-menu-item"><a href="" class="sage-nav-link">Home</a></li>
           <li class="nav-menu-item"><a href="" class="sage-nav-link">Features</a></li>
           <li class="nav-menu-item"><a href="" class="sage-nav-link">Blog</a></li>
           <li class="nav-menu-item"><a href="" class="sage-nav-link">Solution</a></li>
-          <li class="nav-menu-item"><button class="sage-nav-button">Join Now</button></li>
+          <li class="nav-menu-item"><a class="sage-nav-button" href="https://app.wizzysage.com/login">Join Now</a></li>
         </ul>
       </nav>
     </header>
 
-    <script src="" async defer></script>
+    <section class="sage-talk-session">
+
+      <div class="sage-talk-session-content">  
+        <h3 class="sage-talk-session-title"> <span class="sage-talk-session-title-span">Free up time </span>for what matters the most to you</h3>
+        <p>The Sage's magic will create a personal assistant who meets your needs and personality!</p>
+
+        <div class="sage-talk-session-content-terms">
+          <p>Al hacer click aceptas nuestros terminos y condiciones</p>
+          <div class="sage-talk-session-content-terms__button" id="getStarted">
+            <p>Get Started</p>
+          </div>
+        </div>
+      </div>
+
+      <img src="../assets/images/work.png" alt="work img">
+    
+    </section>
+
+    <main class="sage-content">
+      <section class="sage-content-offer">
+        <h3>What we Offer</h3>
+        <p>Foster a deep, authentic connection between you and your virtual assistant.</p>
+        <div class="sage-content-offers">
+          <article class="sage-offer">
+            <img src="../assets/images/personal-use.png" alt="">
+          </article>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="">
+
+    </footer>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>
