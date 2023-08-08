@@ -68,7 +68,15 @@ body{
     font-size: 12px;
 }
 
-.sage-toggle{
-    font-size: 2rem;
-    padding: 0 20px;
+.nav-toggle{
+    color: #651DFF;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    padding: 0 1.25rem;
+    line-height: 3.75rem;
+}
+
+@media (max-width: 768px){
+    
 }
