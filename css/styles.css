@@ -248,9 +248,10 @@ h1, h2, h3 {
     font-style: normal;
     font-weight: 700;
     line-height: 3.8rem; /* 135.714% */ 
+    text-align: center;
 }
 
-.sage-content-offer p {
+.sage-content-foster {
     color: #595959;
     width: 520px; 
     font-family: Poppins;
@@ -258,11 +259,13 @@ h1, h2, h3 {
     font-style: normal;
     font-weight: 600;
     line-height: 26px; /* 185.714% */ 
+    text-align: center;
 }
 
 .sage-content-offers {
     display: flex;
-
+    margin-top: 42px;
+    gap: 42px;
 }
 
 .sage-offer {
