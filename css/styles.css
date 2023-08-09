@@ -239,6 +239,7 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
 
 .sage-content-offer h3 {
@@ -269,9 +270,32 @@ h1, h2, h3 {
 }
 
 .sage-offer {
-
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    gap: 42px;
+    padding: 5rem 5rem 5rem 5rem;
+    overflow: hidden;
 }
 
+.sage-content-offer-div {
+    margin-top: 3.75rem;
+    text-align: center;
+}
+
+.sage-offer-title {
+    font-size: 16px;
+    padding-bottom: 1.9rem;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.sage-offer-div-text {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+}
 
 /* Footer */
 .sage-footer {
