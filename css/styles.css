@@ -798,6 +798,7 @@ h1, h2, h3 {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 42px;
         margin-top: 20px;
+        padding: 30px 35px;
     }
 }
 
