@@ -509,23 +509,54 @@ h1, h2, h3 {
     align-self: center;
 }
 
-.sage-content-ai {
-    width: 100%;
-    display: flex;
-    margin-top: 9.9rem;
-}
-
 @media (max-width: 700px) {
     .sage-content {
         padding-left: 10px;
         padding-right: 10px;
     }
 }
+.sage-content-ai {
+    width: 100%;
+    display: flex;
+    margin-top: 9.9rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.sage-content-services {
+    width: 100%;
+    display: flex;
+    margin-top: 9.9rem;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    align-self: baseline;
+}
 
 .sage-content-offer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.sage-content-offer-ai {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.sage-content-offer-services {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     align-self: center;
@@ -543,13 +574,15 @@ h1, h2, h3 {
     padding-top: 93px;
 }
 
-.sage-content-offer-ai {
+.sage-content-offer-services-div{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
+    align-items: baseline;
+    justify-content: baseline;
+    align-self: baseline;
+    padding-left: 154px;
+    padding-right: 154px;
 }
 
 .sage-content-offer h3 {
@@ -574,6 +607,17 @@ h1, h2, h3 {
     margin-top: 0.5rem;
 }
 
+.sage-content-offer-services-h3 {
+    color: #191919;
+    text-align: center;
+    font-family: var(--contentFont);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 135.714% */ 
+    margin-top: 0.5rem;
+}
+
 .sage-content-offer-ai-p {
     color: #fff;
     text-align: center;
@@ -585,11 +629,32 @@ h1, h2, h3 {
     margin-top: 0.5rem;
 }
 
+.sage-content-offer-services-p {
+    color: #6546BE;
+    text-align: center;
+    font-family: var(--contentFont);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px; /* 135.714% */ 
+}
+
 .sage-content-foster-ai-text{
     margin-top: 0.5rem;
     color: #fff;
     text-align: center;
     font-family: var(--contentFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 135.714% */ 
+}
+
+.sage-content-foster-services-text{
+    margin-top: 0.5rem;
+    color: #000;
+    text-align: left;
+    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -624,6 +689,15 @@ h1, h2, h3 {
     flex-wrap: wrap;
 }
 
+.sage-content-offers-services {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+
 .content-offer-card {
     width: 300px;
     margin: 2rem;
@@ -636,9 +710,16 @@ h1, h2, h3 {
     gap: 42px;
 }
 
+.content-offer-card-services {
+    width: 300px;
+    margin: 2rem;
+    gap: 42px;
+}
+
 .card-img {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .age-offer-img{
@@ -650,6 +731,10 @@ h1, h2, h3 {
 }
 
 .sage-content-offer-info-ai{
+    text-align: center;
+}
+
+.sage-content-offer-info-services{
     text-align: center;
 }
 
@@ -673,6 +758,16 @@ h1, h2, h3 {
     margin-top: 1.5rem;
 }
 
+.sage-offer-title-services {
+    color: #191919;
+    font-family: var(--contentFont);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 185.714% */ 
+    margin-top: 1.5rem;
+}
+
 .sage-offer-text {
     color: #595959;
     font-family: var(--contentFont);
@@ -686,6 +781,17 @@ h1, h2, h3 {
 
 .sage-offer-text-ai {
     color: #fff;
+    font-family: var(--contentFont);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 163.636% */ 
+    padding: 1rem;
+    align-items: center;
+}
+
+.sage-offer-text-services {
+    color: #595959;
     font-family: var(--contentFont);
     font-size: 12px;
     font-style: normal;
