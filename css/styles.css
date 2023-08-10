@@ -143,7 +143,7 @@ h1, h2, h3 {
     margin-right: 40px;
     list-style: none;
     font-size: 12px;
-    margin: 0 15px;
+    margin: 0 ;
     gap: 20px;
     line-height: 80px;
     width: max-content;
@@ -159,6 +159,12 @@ h1, h2, h3 {
     color: var(--sagePurple);
     text-decoration: none;
     font-size: 12px;
+    margin-right: 20px;
+}
+@media (max-width: 700px) {
+    .sage-nav-link {
+        margin: 0;
+    }
 }
 
 .sage-logo{
@@ -562,6 +568,12 @@ h1, h2, h3 {
     align-self: center;
 }
 
+@media (max-width: 700px) {
+    .sage-content-offer-services {
+        flex-direction: column;
+    }
+}
+
 .sage-content-offer-ai-div{
     width: 100%;
     display: flex;
@@ -572,6 +584,13 @@ h1, h2, h3 {
     padding-left: 500px;
     padding-right: 500px;
     padding-top: 93px;
+}
+@media (max-width: 700px) {
+    .sage-content-offer-ai-div {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .sage-content-offer-services-div{
@@ -683,11 +702,21 @@ h1, h2, h3 {
 
 .sage-content-offers-ai {
     display: flex;
+    flex-direction: column;
     align-items: baseline;
     margin-top: 1rem;
     padding-top: 1rem;
-    flex-wrap: wrap;
 }
+@media (max-width: 700px) {
+    .sage-content-offers-ai {
+
+    }
+}
+
+
+
+
+
 
 .sage-content-offers-services {
     display: flex;
@@ -705,15 +734,32 @@ h1, h2, h3 {
 }
 
 .content-offer-card-ai {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    margin: 2rem;
+    gap: 42px;
+}
+@media (max-width: 700px) {
+    .content-offer-card-ai {
+
+    }
+}
+
+.content-offer-card-services {
+    /*width: 300px;*/
+    max-width: 100%;
     margin: 2rem;
     gap: 42px;
 }
 
-.content-offer-card-services {
-    width: 300px;
-    margin: 2rem;
-    gap: 42px;
+@media (max-width: 700px) {
+    .content-offer-card-services  {
+       padding: 0; 
+       margin : 0;
+       margin-top: 40px;
+    }
 }
 
 .card-img {
@@ -732,7 +778,19 @@ h1, h2, h3 {
 
 .sage-content-offer-info-ai{
     text-align: center;
+
 }
+
+
+/*
+@media (max-width: 700px) {
+    .sage-content-offer-info-ai {
+
+    }
+}*/
+
+
+
 
 .sage-content-offer-info-services{
     text-align: center;
