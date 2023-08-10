@@ -79,14 +79,63 @@ h1, h2, h3 {
     z-index: 99;
 }
 
+@media (max-width: 700px) {
+   .sage-header {
+        flex-direction: row;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+        align-items: center;
+        padding-bottom: 20px;
+   }
+}
+
 .sage-nav {
     display: flex;
     text-decoration: none;
     justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 700px) {
+    .sage-nav {
+        flex-direction: column;
+    }
+
+    .sage-nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      
+    }
 }
 
 .sage-nav-menu{
     display: flex;
+}
+
+/* Utility */
+.hide {
+    display: none;
+}
+@media (max-width: 700px) {
+    .sage-nav-menu {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        display: none;
+    }
+
+    .sage-nav-menu li {
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
 }
 
 .nav-menu-item {
@@ -98,6 +147,11 @@ h1, h2, h3 {
     gap: 20px;
     line-height: 80px;
     width: max-content;
+}
+@media (max-width: 700px) {
+    .nav-menu-item {
+        gap: 0;
+    }
 }
 
 .sage-nav-link{
@@ -129,8 +183,26 @@ h1, h2, h3 {
 }
 
 .sage-toggle{
-    font-size: 2rem;
-    padding: 0 20px;
+    margin-top: 14px;
+    padding: 0;
+    font-size: 3rem;
+    border: 0;
+    background-color: #F7F7F9;
+    display: none;
+}
+
+.sage-toggle :hover{
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .sage-toggle {
+        display: inline;
+    }
+}
+
+.show {
+    display: flex;
 }
 
 /*---------------------------------------------------*/
@@ -146,7 +218,19 @@ h1, h2, h3 {
     gap: 1rem;
     background-color: #F7F7F9;
     padding-bottom: 6.7rem;
-    
+}
+
+/*Utility*/
+.toggle-padding {
+    padding-top: 340px;
+}
+
+@media (max-width: 700px) {
+    .sage-talk-session {
+        padding-left: 10px;
+        padding-right:10px;
+        flex-direction: column;
+    }
 }
 
 /* No se esta usando*/
@@ -154,7 +238,6 @@ h1, h2, h3 {
     height: 310px;
     margin-left: -100px;
     margin-top: 6.3rem;
-    
 }
 
 /* CHAT */
@@ -163,6 +246,12 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+@media (max-width: 700px) {
+    .sage-talk-session-chat{
+        min-width: 100%;
+    }
+   
 }
 
 .sage-talk-session-chat p {
@@ -229,7 +318,7 @@ h1, h2, h3 {
 
 .sage-talk-session-chat-content-message__bot {
     border-radius: 15px 15px 15px 0px; 
-    width: 300px;
+    max-width: 300px;
     background-color: #E6E0EC;
 
     padding-left: 30px;
@@ -257,7 +346,7 @@ h1, h2, h3 {
 
 .sage-talk-session-chat-content-message__user {
     border-radius: 15px 15px 0px 15px; 
-    width: 300px;
+    max-width: 300px;
     background-color: #F3F3F3;
     
     padding-left: 30px;
@@ -292,6 +381,12 @@ h1, h2, h3 {
     width: 100%;
 }
 
+@media (max-width: 700px) {
+    .sage-talk-session-chat-content-input {
+        gap: 5px;
+    }
+}
+
 .sage-talk-session-chat-content-input input {
     height: 44px;
     width: 100%; 
@@ -299,7 +394,6 @@ h1, h2, h3 {
     border-radius: 15px; 
     border: 1px solid #CAC4CF;
     background-color: #FFF;
-    /* M3/Sage/label/large */
     font-family: var(--contentFont);
     font-size: 14px;
     font-style: normal;
@@ -392,14 +486,14 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.sage-talk-session-content-terms__button p {
+.sage-talk-session-content-terms__button a {
     color: #FFF;
     text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
-    }
+}
 
 /*----------------------------------*/
 /* Content Sage What We Offer */
@@ -419,6 +513,13 @@ h1, h2, h3 {
     width: 100%;
     display: flex;
     margin-top: 9.9rem;
+}
+
+@media (max-width: 700px) {
+    .sage-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .sage-content-offer {

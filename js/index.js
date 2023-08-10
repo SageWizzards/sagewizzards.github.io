@@ -15,7 +15,64 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let counterGlobal = localStorage.getItem('count');
 
-    
+    //
+    let menu = document.getElementById('menu');
+    let content = document.getElementById('content');
+
+    let menuToggle = document.getElementById('menu-toggle');
+
+    menuToggle.addEventListener('click', () => {
+        if(menu.classList.contains('show')) {
+            menu.classList.remove('show')
+        } else {
+            menu.classList.add('show')
+        }
+
+        if(content.classList.contains('toggle-padding')) {
+            content.classList.remove('toggle-padding')
+        } else {
+            content.classList.add('toggle-padding')
+        }
+        
+    });
+
+    var os = "Desconocido";
+
+    if (navigator.userAgent.indexOf("Win") != -1) {
+        os = "Windows";
+    } else if (navigator.userAgent.indexOf("Mac") != -1) {
+        os = "MacOS";
+    } else if (navigator.userAgent.indexOf("Linux") != -1) {
+        os = "Linux";
+    } else if (navigator.userAgent.indexOf("Android") != -1) {
+        os = "Android";
+    } else if (navigator.userAgent.indexOf("iOS") != -1) {
+        os = "iOS";
+    }
+
+    var elementHeader = document.getElementById('link-download');
+
+    if(os === 'Windows') {
+        const a_link = document.createElement('a');
+        a_link.href= 'https://github.com/SageWizzards/sage-app-releases/releases/download/v0.4.5/Sage.App_0.4.5_x64_en-US.msi';
+        a_link.classList=['sage-nav-button'];
+        a_link.textContent = 'Descarga la app para Windows'
+        elementHeader.appendChild(a_link);
+    } else if( os === 'MacOS') {
+        const a_link = document.createElement('a');
+        a_link.href= 'https://github.com/SageWizzards/sage-app-releases/releases/download/v0.4.5/Sage.App_x64.app.tar.gz';
+        a_link.classList=['sage-nav-button'];
+        a_link.textContent = 'Descarga la app para MacOS'
+        elementHeader.appendChild(a_link);
+    }
+    else {
+        const a_link = document.createElement('a');
+        a_link.href= 'https://app.wizzysage.com/login';
+        a_link.classList=['sage-nav-button'];
+        a_link.textContent = 'Inicia Session'
+        elementHeader.appendChild(a_link);
+    }
+
     // Obtiene el botón por su id
     let boton = document.getElementById(SEND_MESSAGE_BUTTON);
 

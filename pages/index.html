@@ -30,23 +30,27 @@
 
       <!--Navbar Sage-->
       <nav class="sage-nav">
-        <img src="../assets/images/icons/sage_logo.png" class="sage-logo">
+        <div class="sage-nav-container">
+          <img src="../assets/images/icons/sage_logo.png" class="sage-logo">
 
-        <!--
-        <button class="sage-toggle">
-          <i class="fas fa-bars"></i>
-        </button>-->
+          <button class="sage-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        
 
-        <ul class="sage-nav-menu">
+        <ul class="sage-nav-menu" id="menu">
           <li class="nav-menu-item"><a href="" class="sage-nav-link">Inicio</a></li>
           <li class="nav-menu-item"><a href="" class="sage-nav-link">Qué ofrecemos</a></li>
           <li class="nav-menu-item"><a href="" class="sage-nav-link">Qué es Sage </a></li>
-          <li class="nav-menu-item"><a class="sage-nav-button" href="https://app.wizzysage.com/login">Iniciar Sesión</a></li>
+
+          <!--HTML Injection-->
+          <li class="nav-menu-item" id="link-download"></li>
         </ul>
       </nav>
     </header>
 
-    <section class="sage-talk-session">
+    <section class="sage-talk-session" id="content">
 
       <div class="sage-talk-session-content">  
         <h3 class="sage-talk-session-title"> <span class="sage-talk-session-title-span">Libera tiempo </span>para lo que más te importa </h3>
@@ -54,7 +58,7 @@
 
         <div class="sage-talk-session-content-terms">
           <div class="sage-talk-session-content-terms__button" id="getStarted">
-            <p>Únete Ahora</p>
+            <a href="https://app.wizzysage.com/login">Únete Ahora</a>
           </div>
         </div>
       </div>
