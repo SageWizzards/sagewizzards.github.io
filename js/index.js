@@ -7,6 +7,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const DEFAULT_THREAD_KEY = 'uhjsd8092271';
     // const DEFAULT_THREAD_KEY = 'uhjsd' + Math.floor(Math.random() * 1000000) + 1;
     // Initial 
+
+    // links
+    let link1 = document.getElementById('link1');
+    link1.addEventListener('click', (e) => {
+        e.preventDefault()
+        this.location.href = '#content'
+    })
+
+    let link2 = document.getElementById('link2');
+    link2.addEventListener('click', (e) => {
+        e.preventDefault()
+        this.location.href = '#section2'
+    })
+
+    let link3 = document.getElementById('link3');
+    link3.addEventListener('click', (e) => {
+        e.preventDefault()
+        this.location.href = '#section3'
+    })
+
+    // Localstorage
     
     let localStorageCounter = localStorage.getItem('count');
     if(localStorageCounter === null) {
@@ -33,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             content.classList.add('toggle-padding')
         }
-        
     });
 
     var os = "Desconocido";
