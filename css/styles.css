@@ -531,6 +531,18 @@ h1, h2, h3 {
     align-self: center;
 }
 
+.sage-content-offer-ai-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 93px;
+}
+
 .sage-content-offer-ai {
     width: 100%;
     display: flex;
@@ -538,10 +550,9 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     align-self: center;
-    margin-top: 93px;
 }
 
-.sage-content-offer-h3 {
+.sage-content-offer h3 {
     color: #191919;
     text-align: center;
     font-family: var(--contentFont);
@@ -549,6 +560,18 @@ h1, h2, h3 {
     font-style: normal;
     font-weight: 700;
     line-height: 38px; /* 135.714% */ 
+    margin-top: 17px;
+}
+
+.sage-content-offer-ai-h3 {
+    color: #fff;
+    text-align: center;
+    font-family: var(--contentFont);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 135.714% */ 
+    margin-top: 0.5rem;
 }
 
 .sage-content-offer-ai-p {
@@ -557,19 +580,20 @@ h1, h2, h3 {
     font-family: var(--contentFont);
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 38px; /* 135.714% */ 
+    margin-top: 0.5rem;
 }
 
-.sage-content-offer-ai h3 {
+.sage-content-foster-ai-text{
+    margin-top: 0.5rem;
     color: #fff;
     text-align: center;
     font-family: var(--contentFont);
-    font-size: 28px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 38px; /* 135.714% */ 
-    margin-top: 93px;
 }
 
 .sage-content-foster {
@@ -642,7 +666,7 @@ h1, h2, h3 {
 .sage-offer-title-ai {
     color: #fff;
     font-family: var(--contentFont);
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px; /* 140% */
@@ -663,7 +687,7 @@ h1, h2, h3 {
 .sage-offer-text-ai {
     color: #fff;
     font-family: var(--contentFont);
-    font-size: 11px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 163.636% */ 
