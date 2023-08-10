@@ -437,9 +437,10 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     align-self: center;
+    margin-top: 93px;
 }
 
-.sage-content-offer h3 {
+.sage-content-offer-h3 {
     color: #191919;
     text-align: center;
     font-family: var(--contentFont);
@@ -449,11 +450,21 @@ h1, h2, h3 {
     line-height: 38px; /* 135.714% */ 
 }
 
-.sage-content-offer-ai p {
+.sage-content-offer-ai-p {
     color: #fff;
     text-align: center;
     font-family: var(--contentFont);
     font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 135.714% */ 
+}
+
+.sage-content-offer-ai h3 {
+    color: #fff;
+    text-align: center;
+    font-family: var(--contentFont);
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 38px; /* 135.714% */ 
