@@ -557,6 +557,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     align-self: center;
+    padding: 50px 100px 100px;
 }
 
 .sage-content-offer-services {
@@ -581,9 +582,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     align-self: center;
-    padding-left: 500px;
-    padding-right: 500px;
-    padding-top: 93px;
+    padding: 50px 350px;
 }
 @media (max-width: 700px) {
     .sage-content-offer-ai-div {
@@ -701,15 +700,36 @@ h1, h2, h3 {
 }
 
 .sage-content-offers-ai {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 42px;
+    margin-top: 20px;
 }
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .sage-content-offers-ai {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 42px;
+        margin-top: 20px;
+    }
+}
 
+@media (max-width: 500px) {
+    .sage-content-offers-ai {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 42px;
+    }
+
+    .content-offer-card-ai {
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -1088,4 +1108,20 @@ h1, h2, h3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+@media(max-width: 400px) {
+body {
+    width: 100%;
+    padding: 0%;
+    margin: auto;
+}
 }
