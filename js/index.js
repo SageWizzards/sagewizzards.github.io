@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let messages = document.querySelector(".sage-talk-session-chat-content-messages");
 
         // Coloca aquí el código que deseas ejecutar al presionar el botón
-        if(inputMessage.value && localStorage.getItem('count') > 12) {
+        if(inputMessage.value && localStorage.getItem('count') < 12) {
             const user_message_string = inputMessage.value;
             const body = {
                 message: user_message_string
