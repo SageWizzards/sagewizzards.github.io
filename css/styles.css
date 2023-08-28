@@ -1031,7 +1031,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 0 35px;
+    padding: 0 36px;
     background: linear-gradient(to left top,  #442EB5, #641DFD);
 }
 
