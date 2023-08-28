@@ -1050,6 +1050,10 @@ h1, h2, h3 {
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .team-wrapper i:first-child {
@@ -1057,15 +1061,19 @@ h1, h2, h3 {
 }
 
 .team-wrapper i:last-child {
-    right: -22px;  
-  }
+    right: -22px;
+}
 
 .team-wrapper .team-carousel {
-  display: grid;
-  grid-auto-flow: column;  
-  grid-auto-columns: calc((100% / 3) -12px);
-  gap: 16px;
-  overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .team-carousel :where(.team-card, .team-img) {
@@ -1076,7 +1084,6 @@ h1, h2, h3 {
 
 .team-carousel .team-card {
     height: 342px;
-    width: 250px;
     list-style: none;
     background-color: #F7F7F9;
     padding-bottom: 15px;
@@ -1113,6 +1120,19 @@ h1, h2, h3 {
     color: #1C1B1E;
     font-family: Poppins;
     font-size: 1.31rem;
+}
+
+/*Media querys for carousel */
+@media screen and (max-width: 900px) {
+    .team-wrapper .team-carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team-wrapper .team-carousel {
+        grid-auto-columns: 100%;
+    }
 }
 
 
