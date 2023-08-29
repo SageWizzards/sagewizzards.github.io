@@ -1,7 +1,18 @@
 //Variable para el carrusel
 const carousel = document.querySelector(".team-carousel");
+const arrowBtns = document.querySelectorAll(".team-wrapper i");
+const firstCardWidth = carousel.querySelector(".team-card").offsetWidth;
 
 let isDragging = false, startX, startScrollLeft;
+
+//Para que funcionen los botones del carrusel
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        //Mostrar id del boton en consola
+        console.log(btn.id);
+        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+    })
+});
 
 const dragStart = () => {
     isDragging = true;
