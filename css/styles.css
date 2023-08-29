@@ -1099,7 +1099,7 @@ h1, h2, h3 {
 
 .team-carousel .team-card {
     scroll-snap-align: start;
-    height: 342px;
+    height: 362px;
     list-style: none;
     background-color: #F7F7F9;
     padding-bottom: 15px;
@@ -1146,6 +1146,13 @@ h1, h2, h3 {
     color: #1C1B1E;
     font-family: Poppins;
     font-size: 1.31rem;
+}
+
+.team-description {
+    color: #595959;
+    font-family: Poppins;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /*Media querys for carousel */
