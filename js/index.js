@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         os = "Linux";
     } else if (navigator.userAgent.indexOf("Android") != -1) {
         os = "Android";
-    } else if (navigator.userAgent.indexOf("iOS") != -1) {
+    } else if (navigator.userAgent.indexOf("iPhone") != -1 || navigator.userAgent.indexOf("iOS") != -1) {
         os = "iOS";
     }
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
         a_link.classList=['sage-nav-button'];
         a_link.textContent = 'Descarga la app para Windows'
         elementHeader.appendChild(a_link);
-    } else if( os === 'MacOS') {
+    } else if(os === 'MacOS') {
         const a_link = document.createElement('a');
         a_link.href= 'https://github.com/SageWizzards/sage-app-releases/releases/download/v0.4.6/Sage.App_x64.app.tar.gz';
         a_link.classList=['sage-nav-button'];
