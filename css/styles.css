@@ -1076,13 +1076,15 @@ h1, h2, h3 {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 16px;
-    border-radius: 8px;
     scroll-behavior: smooth;
-    scrollbar-width: none;
-    overflow: hidden;
+    scrollbar-width: 0;
+}
+
+.team-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .team-carousel :where(.team-card, .team-img) {
@@ -1091,7 +1093,12 @@ h1, h2, h3 {
     justify-content: center;
 }
 
+.team-carousel .no-transition {
+    scroll-behavior: auto;
+}
+
 .team-carousel .team-card {
+    scroll-snap-align: start;
     height: 342px;
     list-style: none;
     background-color: #F7F7F9;
@@ -1101,6 +1108,11 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.team-carousel .dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
 }
 
 .team-carousel .dragging .team-card {
