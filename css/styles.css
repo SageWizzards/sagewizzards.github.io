@@ -1082,6 +1082,7 @@ h1, h2, h3 {
     border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    overflow: hidden;
 }
 
 .team-carousel :where(.team-card, .team-img) {
@@ -1100,6 +1101,11 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.team-carousel .dragging .team-card {
+    cursor: grab;
+    user-select: none;
 }
 
 .team-card .team-img {
