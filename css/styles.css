@@ -512,7 +512,95 @@ h1, h2, h3 {
 /* Content Sage What We Offer */
 /*----------------------------------*/
 
+.sage-services-features {
+    background-color: #FFFFFF;
+    padding: 5rem 0;
+}
 
+.section-services-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-services-top,
+.sage-features-container {
+    padding: 01.5rem;
+}
+
+.section-services-top {
+    text-align: center;
+}
+
+.section-services-top h1 {
+    margin-bottom: 0.5rem;
+    color: var(--sagePurple);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 135.714% */
+}
+
+.section-services-top p {
+    margin-bottom: 1rem;
+    padding: 0 5rem;
+    color: #595959;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 123.81% */
+}
+
+.sage-features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sage-feature-item {
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.sage-feature-item svg {
+    margin-bottom: 0.5rem;
+}
+
+.sage-featureitem-info h3 {
+    color: #191919;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 144.444% */
+    margin-bottom: 0.5rem;
+}
+
+.sage-featureitem-info p {
+    color: #595959;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */ 
+}
+
+/*Media querys*/
+@media(max-width: 768px) {
+    .section-services-top p {
+        padding: 0;
+    }
+
+    .sage-features-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 /*Our Team*/
 .meet-our-team {
