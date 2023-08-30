@@ -553,6 +553,12 @@ h1, h2, h3 {
     padding: 30px 35px;
 }
 
+.sage-content-offer-title {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--sagePurple);
+}
+
 .sage-content-offer-ai {
     width: 100%;
     display: flex;
@@ -637,9 +643,9 @@ h1, h2, h3 {
 }
 
 .sage-content-offer h3 {
-    color: #191919;
+    color: var(--sagePurple);
     text-align: center;
-    font-family: var(--contentFont);
+    font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -741,7 +747,7 @@ h1, h2, h3 {
     color: #595959;
     max-width: 520px; 
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 600;
     line-height: 26px; /* 185.714% */ 
@@ -752,6 +758,7 @@ h1, h2, h3 {
 .sage-content-offers {
     display: flex;
     align-items: baseline;
+    padding-top: 5rem;
 }
 
 @media (max-width: 400px) {
@@ -916,13 +923,14 @@ h1, h2, h3 {
 }
 
 .sage-offer-title {
-    color: #191919;
-    font-family: var(--contentFont);
-    font-size: 14px;
+    color: var(--black, #191919);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 26px; /* 185.714% */ 
-    margin-top: 1.5rem;
+    line-height: 26px; /* 144.444% */
+    padding-top: 1rem;
 }
 
 .sage-offer-title-ai {
@@ -947,13 +955,13 @@ h1, h2, h3 {
 
 .sage-offer-text {
     color: #595959;
-    font-family: var(--contentFont);
-    font-size: 11px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 163.636% */ 
-    padding: 1rem;
-    align-items: center;
+    line-height: 22px; /* 122.222% */
+    padding-top: 2rem;
 }
 
 .sage-offer-text-ai {
