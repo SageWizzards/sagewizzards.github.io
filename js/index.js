@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         os = "Linux";
     } else if (navigator.userAgent.indexOf("Android") != -1) {
         os = "Android";
-    } else if (navigator.userAgent.indexOf("iPhone") != -1 || navigator.userAgent.indexOf("iOS") != -1) {
+    } else if (navigator.userAgent.indexOf("iOS") != -1) {
         os = "iOS";
     }
 
