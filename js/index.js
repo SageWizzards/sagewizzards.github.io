@@ -78,14 +78,20 @@ document.addEventListener("DOMContentLoaded", function() {
         a_link.classList=['sage-nav-button'];
         a_link.textContent = 'Descarga la app para Windows'
         elementHeader.appendChild(a_link);
-    } else if( os === 'MacOS') {
+    } else if(os === 'MacOS') {
         const a_link = document.createElement('a');
         a_link.href= 'https://github.com/SageWizzards/sage-app-releases/releases/download/v0.4.6/Sage.App_x64.app.tar.gz';
         a_link.classList=['sage-nav-button'];
         a_link.textContent = 'Descarga la app para MacOS'
         elementHeader.appendChild(a_link);
     }
-    else {
+    else if (os === 'iOS') {
+        const a_link = document.createElement('a');
+        a_link.href= 'https://app.wizzysage.com/login';
+        a_link.classList=['sage-nav-button'];
+        a_link.textContent = 'Inicia Session'
+        elementHeader.appendChild(a_link);
+    } else {
         const a_link = document.createElement('a');
         a_link.href= 'https://app.wizzysage.com/login';
         a_link.classList=['sage-nav-button'];
