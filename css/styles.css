@@ -39,45 +39,176 @@ body {
     background-color: var(--sageBody);
     width: 100%;
 }
+a {
+    text-decoration: none;
+}
 
 /*---------------------------------------------------*/
-/* Navbar */
+/* Header */
 /*---------------------------------------------------*/
 
-.sage-header {
+.sage-header{
+    width: 100%;
+    padding-top: 4.7rem;
+    padding-left: 7.3rem;
+    padding-right: 7.3rem;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background-color: var(--sageBody);
+    background-color: #F7F7F9;
     display: flex;
+    flex-direction: column;
+    gap: 207px;
+    z-index: 99;
+}
+
+@media (max-width: 700px) {
+   .sage-header {
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+        align-items: center;
+        padding-bottom: 20px;
+   }
+}
+
+.sage-nav {
+    display: flex;
+    text-decoration: none;
     justify-content: space-between;
-    z-index: 100;
-}
-
-.sage-logo {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.sage-nav a {
-    font-size: 18px;
+@media (max-width: 700px) {
+    .sage-nav {
+        flex-direction: column;
+    }
+
+    .sage-nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      
+    }
+}
+
+.sage-nav-menu{
+    display: flex;
+}
+
+/* Utility */
+.hide {
+    display: none;
+}
+@media (max-width: 700px) {
+    .sage-nav-menu {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        display: none;
+    }
+
+    .sage-nav-menu li {
+        padding: 0;
+        margin: 0;
+        height: 50px;
+    }
+}
+
+.nav-menu-item {
+    text-decoration: none;
+    margin-right: 40px;
+    list-style: none;
+    font-size: 12px;
+    margin: 0 ;
+    gap: 20px;
+    line-height: 80px;
+    width: max-content;
+}
+@media (max-width: 700px) {
+    .nav-menu-item {
+        gap: 0;
+    }
+}
+
+.sage-nav-link {
+    font-family: Poppins;
     color: var(--sagePurple);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-style: normal;
     font-weight: 600;
-    margin-left: 3.5rem;
-    transition: 0.3s;
-    cursor: pointer;
+    line-height: 28px;
 }
-
-.sage-nav a:hover {
+.sage-nav-link:hover {
     color: #1C1B1E;
 }
 
-#menu-toggle {
-    font-size: 3.6rem;
-    color: var(--sagePurple);
+@media (max-width: 700px) {
+    .sage-nav-link {
+        margin: 0;
+    }
+}
+
+.sage-logo{
+    line-height: 80px;
+    width: 125px;
+    height: 63px;
+}
+
+.sage-nav-button {
     cursor: pointer;
+    width: 127px;
+    height: 40px;
+    padding: 10px 24px;
+    border-radius: 100px;
+    justify-content: end;
+    align-items: center;
+    background: var(--sagePurple);
+    color: #FFFFFF;
+    border-color: transparent;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+.sage-nav-button:hover {
+    color: #1C1B1E;
+}
+
+.sage-toggle{
+    margin-top: 14px;
+    padding: 0;
+    font-size: 3rem;
+    border: 0;
+    background-color: #F7F7F9;
     display: none;
+}
+
+.sage-toggle :hover{
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .sage-toggle {
+        display: inline;
+    }
+
+    .sage-nav-button {
+        background-color: var(--sageBody);
+        color: var(--sagePurple);
+    }
+}
+
+.show {
+    display: flex;
 }
 
 /*---------------------------------------------------*/
@@ -91,10 +222,18 @@ section {
 
 .sage-talk-session {
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 0 9%;
+    padding-top: 134px;
 }
 
+@media (max-width: 700px) {
+    .sage-talk-session {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /* CHAT */
 .sage-talk-session-chat {
@@ -104,10 +243,9 @@ section {
     gap: 8px;
 }
 @media (max-width: 700px) {
-    .sage-talk-session-chat{
+    .sage-talk-session-chat {
         min-width: 100%;
     }
-   
 }
 
 .sage-talk-session-chat p {
@@ -204,7 +342,6 @@ section {
     border-radius: 15px 15px 0px 15px; 
     max-width: 300px;
     background-color: #F3F3F3;
-    
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 16px;
@@ -272,7 +409,7 @@ section {
     cursor: pointer;
 }
 
-.sage-talk-session-chat-content-input__button img{
+.sage-talk-session-chat-content-input__button img {
     padding: 0;
     margin: 0;
     width: 24px;
@@ -302,14 +439,48 @@ section {
     margin: 0 auto;
 }
 
+.sage-talk-session-content p {
+    color: rgba(30, 37, 94, 0.70);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
 .sage-talk-session-top,
 .sage-talk-session-chat-content {
     padding: 0.15rem;
 }
 
+.sage-talk-session-content-terms {
+    background-color: var(--sagePurple);
+    border-radius: 100px; 
+    width: 192px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
 
-.sage-talk-session-content-terms__button :hover {
+.sage-talk-session-content-terms:hover {
     cursor: pointer;
+}
+
+.sage-talk-session-content-terms a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sage-talk-session-content-terms a:hover {
+    color: #1C1B1E;
 }
 
 .sage-talk-session-content-terms__button a {
