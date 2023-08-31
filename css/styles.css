@@ -224,6 +224,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
     padding: 0 9%;
     padding-top: 134px;
 }
@@ -693,6 +694,137 @@ section {
     }
 }
 
+/*Meet Sage*/
+.meet-section {
+    padding: 5rem 0;
+}
+
+.meet-section,
+.meet-container {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.meet-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.meet-article,
+.sage-differences-container {
+padding: 01.5rem;
+}
+
+.meet-article {
+    width: 100%;
+    text-align: center;
+}
+
+.meet-article h1 {
+    color: #191919;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 128.571% */
+}
+
+.meet-article p {
+    color: #191919;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 128.571% */
+}
+
+.meet-content {
+    float: left;
+    width: 55%;
+}
+
+.meet-image-section {
+    float: right;
+    width: 40%;
+}
+
+.meet-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.meet-content-section h3 {
+    color: #191919;
+    text-align: center;
+    /* M3/Sage/headline/small */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+}
+
+.meet-content-section p {
+    color:  #595959;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+}
+
+.meet-content-section svg {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.meet-content .meet-article p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+}
+
+@media (max-width: 768px) {
+    .meet-section,
+    .meet-container {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .meet-content {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .meet-image-section {
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .meet-content-section {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    
+}
+
+
 /*Our Team*/
 .meet-our-team {
     margin: 0;
@@ -822,6 +954,8 @@ section {
     font-family: Poppins;
     font-size: 1rem;
     text-align: center;
+    padding-top: .5rem;
+    width: 70%;
 }
 
 /*Media querys for carousel */
