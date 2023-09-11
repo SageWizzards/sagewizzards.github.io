@@ -2,10 +2,6 @@
 /* Typografies */
 /*---------------------------------------------------*/
 
-/*@font-face {
-    font-family: Roxbourough;
-    src: url(../assets/fonts/roxborough-cf/RoxboroughCF-Regular.otf);
-}*/
 
 /*---------------------------------------------------*/
 /* Generals */
@@ -696,134 +692,125 @@ section {
 
 /*Meet Sage*/
 .meet-section {
-    padding: 5rem 0;
-}
-
-.meet-section,
-.meet-container {
-    width: 80%;
-    display: block;
-    margin: 0px auto;
-    padding: 50px 0px;
-}
-
-.meet-container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.meet-article,
-.sage-differences-container {
-padding: 01.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 21.32px;
+    padding-top: 57px;
+    padding-bottom: 61px;
+    padding-left: 154px;
+    padding-right: 154px;
+    height: auto;
 }
 
 .meet-article {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
 }
 
-.meet-article h1 {
-    color: #191919;
+.meet-article h3 {
+    color: #191919; 
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 600;
-    line-height: 36px; /* 128.571% */
+    line-height: 36px; 
+    width: 95%;
 }
 
 .meet-article p {
-    color: #191919;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 85%;
+}
+
+@media (max-width: 768px) {
+    
+    
+}
+
+.meet-image-section {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.meet-content-section {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.meet-content-section h3 {
+    color:  #191919;
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 36px; /* 128.571% */
-}
-
-.meet-content {
-    float: left;
-    width: 55%;
-}
-
-.meet-image-section {
-    float: right;
-    width: 40%;
-}
-
-.meet-content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 3rem;
-}
-
-.meet-content-section h3 {
-    color: #191919;
-    text-align: center;
-    /* M3/Sage/headline/small */
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 140% */
+    line-height: 28px;
 }
 
 .meet-content-section p {
-    color:  #595959;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 133.333% */
-}
-
-.meet-content-section svg {
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-}
-
-.meet-content .meet-article p {
-    color: #000;
-    font-family: Poppins;
+    color: #595959;
+    font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 133.333% */
+    line-height: 20px;
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    
+    
+    .meet-image-section {
+        flex-direction: column;
+    }
+    .meet-content-section {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
-    .meet-section,
-    .meet-container {
-        width: 80%;
-        display: block;
-        margin: auto;
+    .meet-section {
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .meet-content {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
+    .meet-article {
+        gap: 20px;
     }
+
+    .meet-article h3, .meet-article p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .meet-article p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 
     .meet-image-section {
-        float: none;
-        width: 100%;
-        margin-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .meet-content-section {
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-    
+        gap: 5px;
+    }     
 }
-
 
 /*Our Team*/
 .meet-our-team {
