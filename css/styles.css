@@ -1069,10 +1069,10 @@ section {
     margin-top: 20px;
 }
 
-.sage-social p{
+.sage-social p {
     position: relative;
     color: #FFF;
-    font-family: Poppins;
+    font-family: Open Sans;
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 24px;
@@ -1125,7 +1125,7 @@ section {
 
 .sage-contact ul {
     list-style: none;
-    font-family: Poppins;
+    font-family: Open Sans;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
@@ -1142,6 +1142,7 @@ section {
     color: #FFF;
     text-decoration: none;
     display: inline-block;
+    font-family: Open Sans;
 }
 
 .sage-quicklinks{
@@ -1161,15 +1162,16 @@ section {
     list-style: none;
     padding-left: 0;
     font-size: 0.75rem;
+    font-family: Open Sans;
 }
 
 .sage-quicklinks ul li {
     color: #FFF;
-    font-family: Open Sans;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    font-family: Open Sans;
 }
 
 .copyrightText {
@@ -1204,6 +1206,11 @@ section {
 
     .magic {
         padding: 20px 40px 30px;
+    }
+
+    .magic p {
+        padding-top: 2rem;
+        text-align: left;
     }
 }
 
