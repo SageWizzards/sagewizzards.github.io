@@ -27,7 +27,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
     overflow-x: hidden;
 }
 
@@ -137,10 +137,10 @@ a {
     color: var(--sagePurple);
     text-decoration: none;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 17px;
 }
 .sage-nav-link:hover {
     color: #1C1B1E;
@@ -170,7 +170,7 @@ a {
     color: #FFFFFF;
     border-color: transparent;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
@@ -247,7 +247,7 @@ section {
 
 .sage-talk-session-chat p {
     color: rgba(30, 37, 94, 0.70);
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
@@ -422,11 +422,11 @@ section {
 .sage-talk-session-title {
     color: #000;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px;
-    letter-spacing: 0.12px; 
+    line-height: 68px;
+    letter-spacing: 0.14px; 
 }
 
 
@@ -439,9 +439,10 @@ section {
 .sage-talk-session-content p {
     color: rgba(30, 37, 94, 0.70);
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 1.313rem;
     font-style: normal;
     font-weight: 400;
+    line-height: 31px; /* 147.619% */
 }
 
 .sage-talk-session-top,
@@ -466,11 +467,10 @@ section {
 }
 
 .sage-talk-session-content-terms a {
-    text-decoration: none;
-    color: #FFF;
+    color: var(--white);
     text-align: center;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -495,7 +495,7 @@ section {
 
 .sage-services-features {
     background-color: #FFFFFF;
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .section-services-container {
@@ -518,19 +518,19 @@ section {
     color: var(--sagePurple);
     text-align: center;
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 700;
     line-height: 38px; /* 135.714% */
 }
 
 .section-services-top p {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     padding: 0 5rem;
     color: #595959;
     text-align: center;
-    font-family: Poppins;
-    font-size: 21px;
+    font-family: Open Sans;
+    font-size: 1.313rem;
     font-style: normal;
     font-weight: 600;
     line-height: 26px; /* 123.81% */
@@ -551,11 +551,11 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.sage-featureitem-info h3 {
+.sage-feature-title {
     color: #191919;
     text-align: center;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: 26px; /* 144.444% */
@@ -565,18 +565,74 @@ section {
 .sage-featureitem-info p {
     color: #595959;
     text-align: center;
-    font-family: Poppins;
-    font-size: 15px;
+    font-family: Open Sans;
+    font-size: 0.85rem;
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 122.222% */ 
 }
 
-/*Media querys*/
+
+@media (max-width: 798px) {
+    .sage-talk-session-title {
+        color: #000;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.14px; 
+        font-size: 3rem;
+        line-height: 48px;
+    }
+
+    .sage-talk-session-content p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 31px; /* 147.619% */
+    }
+
+    .sage-talk-session-chat p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+    
+    .sage-talk-session-chat {
+        padding-top: 5px;
+        padding-bottom: 70px;
+    }
+
+    .sage-services-feature {
+        padding: 1rem 0;
+    }
+
+    .section-services-top h1 {
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; /* 135.714% */
+    }
+
+    .section-services-top p {
+        font-size: 0.9rem;
+    }
+
+    .sage-feature-title {
+        margin-bottom: 8px;
+        font-size: 1.125rem;
+    }
+
+    .sage-featureitem-info p {
+        font-size: 0.85rem;
+    }
+}
+
 @media(max-width: 768px) {
     .section-services-top p {
         padding: 0;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .sage-features-container {
@@ -588,7 +644,7 @@ section {
 .sage-differences-features {
     background: linear-gradient(180deg, #442EB5 0%, #641DFD 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .section-differences-container {
@@ -611,7 +667,7 @@ section {
     color: #ffff;
     text-align: center;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: 38px; /* 135.714% */
@@ -622,7 +678,7 @@ section {
     color: #FFF;
     text-align: center;
     font-family: Poppins;
-    font-size: 26px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 600;
     line-height: 36px; /* 128.571% */
@@ -633,8 +689,8 @@ section {
     padding: 0 5rem;
     color: #fff;
     text-align: center;
-    font-family: Poppins;
-    font-size: 21px;
+    font-family: Open Sans;
+    font-size: 1.313rem;
     font-style: normal;
     font-weight: 500;
     line-height: 26px; /* 123.81% */
@@ -661,7 +717,7 @@ section {
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: 26px; /* 144.444% */
@@ -671,8 +727,8 @@ section {
 .sage-differenceitem-info p {
     color: #ffff;
     text-align: center;
-    font-family: Poppins;
-    font-size: 15px;
+    font-family: Open Sans;
+    font-size: 0.85rem;
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 122.222% */ 
@@ -680,13 +736,22 @@ section {
 
 /*Media querys*/
 @media(max-width: 768px) {
+
+    .sage-differences-features {
+        padding: 1rem 0;
+    }
+
     .section-differences-top p {
         padding: 0;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .sage-differences-container {
         grid-template-columns: 1fr;
+    }
+
+    .section-differences-top h2 {
+        font-size: 1.5rem
     }
 }
 
@@ -695,7 +760,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 21.32px;
-    padding-top: 57px;
+    padding-top: 2rem;
     padding-bottom: 61px;
     padding-left: 154px;
     padding-right: 154px;
@@ -711,7 +776,7 @@ section {
 .meet-article h3 {
     color: #191919; 
     font-family: Poppins;
-    font-size: 26px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 600;
     line-height: 36px; 
@@ -721,7 +786,7 @@ section {
 .meet-article p {
     color: #000;
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -729,7 +794,18 @@ section {
 }
 
 @media (max-width: 768px) {
-    
+
+    .meet-section {
+        padding: 4rem 0;
+    }
+
+    .meet-article h3 {
+        font-size: 1.5rem;
+    }
+
+    .meet-article p {
+        font-size: 0.875rem;
+    }
     
 }
 
@@ -752,7 +828,7 @@ section {
 .meet-content-section h3 {
     color:  #191919;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
@@ -761,7 +837,7 @@ section {
 .meet-content-section p {
     color: #595959;
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 0.85rem;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -848,7 +924,7 @@ section {
     font-family: Poppins;
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: center;
 }
 
@@ -926,20 +1002,20 @@ section {
 .team-card h2 {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 1.56rem;
+    font-size: 1.125rem;
     margin: 30px 0 5px;
 }
 
 .team-job {
     color: #1C1B1E;
     font-family: Poppins;
-    font-size: 1.31rem;
+    font-size: 0.875rem;
 }
 
 .team-description {
     color: #595959;
-    font-family: Poppins;
-    font-size: 1rem;
+    font-family: Open Sans;
+    font-size: 0.75rem;
     text-align: center;
     padding-top: .5rem;
     width: 70%;
@@ -977,12 +1053,12 @@ section {
 }
 
 .magic p {
-    color: #FFF;
-    font-size: 32px;
+    color: var(--white);
+    font-family: Poppins;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 42px;
-    text-align: start;
+    line-height: 36px; /* 128.571% */
 }
 
 .footer-container{
@@ -998,7 +1074,7 @@ section {
     color: #FFF;
     font-family: Poppins;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.75rem;
     line-height: 24px;
     margin-top: 1rem;
 }
@@ -1031,7 +1107,7 @@ section {
 
 .social-link li a i {
     color: #FFF;
-    font-size: 20px;
+    font-size: 0.75rem;
 }
 
 .sage-contact {
@@ -1050,7 +1126,7 @@ section {
 .sage-contact ul {
     list-style: none;
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -1075,7 +1151,7 @@ section {
 .sage-quicklinks h3{
     font-family: Poppins;
     color: #FFF;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: 26px; /* 162.5% */
@@ -1083,16 +1159,17 @@ section {
 
 .sage-quicklinks ul {
     list-style: none;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     padding-left: 0;
+    font-size: 0.75rem;
 }
 
 .sage-quicklinks ul li {
     color: #FFF;
+    font-family: Open Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .copyrightText {
@@ -1105,7 +1182,7 @@ section {
 }
 
 .copyrightText p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 
