@@ -224,6 +224,7 @@ section {
     padding: 0 9%;
     padding-top: 200px;
     padding-bottom: 50px;
+
 }
 
 @media (max-width: 700px) {
@@ -443,7 +444,8 @@ section {
     font-size: 1.313rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 31px; /* 147.619% */
+    line-height: 31px;
+    width: 80%;
 }
 
 .sage-talk-session-top,
@@ -570,7 +572,7 @@ section {
     font-size: 0.85rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; /* 122.222% */ 
+    line-height: 22px;
 }
 
 
@@ -671,7 +673,7 @@ section {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 38px; /* 135.714% */
+    line-height: 38px;
 }
 
 .section-differences-top h2 {
