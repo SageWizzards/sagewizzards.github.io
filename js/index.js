@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
             inputMessage.value = '';
 
             fetch(
-                `${url}/v1/bots/fakemaga14?thread_lookup_key=${DEFAULT_THREAD_KEY}`,
+                `${url}/v1/bots/Neo?thread_lookup_key=${DEFAULT_THREAD_KEY}`,
                 {
                   method: 'POST',
                   headers: {
